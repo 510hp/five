@@ -1,0 +1,288 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+.recipe
+	background-image: linear-gradient(to top, #f7f7f7 0%, #f5f5f5 0%, rgba(250, 251, 252, 0) 100%)
+	h2
+		font-size: 32px
+		line-height: 32px
+		margin: 0
+	&__title
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin: 16px 0px 40px
+		span
+			font-size: 24px
+			color: #ec2e2e
+	&__item
+		border-radius: 15px
+		overflow: hidden
+		margin-bottom: 30px
+		&__img
+			position: relative
+			img
+				width: 100%
+			span
+				width: 128px
+				height: 128px
+				background-color: #46b650
+				color: #fff
+				display: block
+				border-radius: 50%
+				text-align: center
+				line-height: 128px
+				font-size: 38px
+				position: absolute
+				right: 32px
+				bottom: -32px
+		&__text
+			padding: 34px 30px 60px
+			background-color: #FFF
+			border-bottom: 1px solid  #f4f5f5
+			div
+				font-size: 22px
+				color: #000
+				margin-bottom: 20px
+				span
+					opacity: .4
+			a
+				font-size: 32px
+				color: #000
+				font-weight: 600
+				margin-bottom: 16px
+			.recipe__timer
+				display: block
+				font-size: 24px
+				opacity: .4
+				i
+					margin-right: 4px
+		&__link
+			background-color: #FFF
+			text-align: center
+			padding: 24px 0px
+			font-size: 24px
+			font-weight: 600
+			a
+				color: #ec2e2e
+
+.circles
+	padding: 100px 0px
+	.container
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+	span
+		width: 100px
+		height: 100px
+		border-radius: 50%
+		background-color: #e9eff3
+		display: inline-block
+		margin: 0px 15px 15px
+		&:last-child
+			background-color: #ec2e2e
+			line-height: 100px
+			text-align: center
+			color: #fff
+			font-size: 27px
+			font-weight: 700
+
+.shops
+	background-image: url("../img/shops-bg.jpg")
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	padding: 80px 0px
+	&__content
+		color: #fff
+		display: block
+		max-width: 436px
+		margin: auto
+		img
+			vertical-align: top
+			padding-right: 20px
+			padding-left: 24px
+		p
+			font-size: 123px
+			line-height: 123px
+			margin: 0
+			display: inline-block
+			font-family: "DINAlternateBold", sans-serif
+			span
+				font-size: 24px
+				color: #bdcf01
+				display: block
+				line-height: 24px
+				text-align: left
+
+.card
+	padding: 60px 0px
+	background-color: #ec2e2e
+	color: #fff
+	.card__text
+		font-size: 28px
+		line-height: 32px
+		h2
+			font-size: 44px
+			line-height: 44px
+			margin-top: 0
+	.card__img
+		background-color: #FFF
+		max-width: 576px
+		height: 320px
+		border-radius: 32px
+		padding: 27px 22px
+		box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.11)
+		margin-bottom: 30px
+		img
+			max-width: 100%
+	.btn__card
+		padding: 25px 0px
+		color: #fff
+		display: block
+		margin: auto
+		border: 2px solid #ffffff
+		opacity: .8
+		font-size: 28px
+		line-height: 28px
+		border-radius: 40px
+		text-align: center
+
+footer
+	background-color: #4d4d4d
+	color: #fff
+	h4
+		opacity: .4
+		font-size: 34px
+		line-height: 32px
+		margin: 0
+		font-weight: normal
+	a
+		color: #fff
+		&:hover
+			color: #fff
+	ul
+		padding: 0
+		margin: 0
+		list-style: none
+		li
+			margin-bottom: 18px
+	&__title
+		background-color: #fbfbfb
+		padding: 8px 0px
+		box-shadow: 0 15px 25px rgba(230,230,230,0.9)
+		font-size: 15px
+		ul
+			padding: 0
+			margin: 0
+			text-align: center
+			align-items: center
+			list-style: none
+	&__info
+		padding: 15px 0px
+		font-size: 15px
+		border-bottom: 1px solid #d9d9d9
+		.row
+			align-items: baseline
+			p:first-child
+				font-size: 16px
+				font-style: italic
+				padding-left: 25px
+			p:nth-child(4)
+				text-align: center
+	&__img
+		img
+			width: 160px
+			height: 140px
+
+	.accordion dl, .accordion-list
+		border-bottom: 1px solid #697176
+		margin: 0
+
+	.accordion dd, .accordion__panel
+		margin: 0
+
+	.accordion
+		position: relative
+
+	.accordionTitle, .accordion__Heading
+		padding: 40px 0px
+		display: block
+		cursor: pointer
+		opacity: .4
+		font-size: 32px
+		position: relative
+		-webkit-transition: background-color 0.5s ease-in-out
+		transition: background-color 0.5s ease-in-out
+
+
+	.accordionTitle:before, .accordion__Heading:before
+		content: ""
+		float: right
+		background-image: url("../img/accordion-arrow.svg")
+		width: 24px
+		height: 14px
+		position: absolute
+		right: 0
+		bottom: 50%
+		-webkit-transition: -webkit-transform 0.3s ease-in-out
+		transition: -webkit-transform 0.3s ease-in-out
+		transition: transform 0.3s ease-in-out
+		transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out
+
+	.accordionTitleActive:before, .accordionTitle.is-expanded:before
+		-webkit-transform: rotate(-180deg)
+		transform: rotate(-180deg)
+
+	.accordionItem
+		height: auto
+		overflow: hidden
+		max-height: 50em
+		-webkit-transition: max-height 1s
+		transition: max-height 1s
+		&.is-collapsed
+			max-height: 0
+
+	.no-js .accordionItem.is-collapsed
+		max-height: auto
+
+	.contacts
+		padding: 40px 0px 60px
+		font-size: 24px
+		img
+			margin-bottom: 30px
+		p
+			opacity: .4
+			margin: 0
+
+
+
+
+//ALWAYS END
+@import "media"
